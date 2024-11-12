@@ -63,7 +63,7 @@ const Navbar = () => {
             </ul>
             <div className='flex items-center gap-6'>
                 <div className='flex items-center gap-2'>
-                    {token && <span>Hello, {name}!</span>}
+                    {token && <span>Hi, {name}</span>}
                 </div>
                 {location.pathname === '/collection' && (
                     <img onClick={() => setShowSearch(!showSearch)} src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
