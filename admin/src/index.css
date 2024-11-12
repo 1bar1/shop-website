@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Outfit;
+}
+
+select, input, textarea {
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    outline: none;
+}
+
+select:focus, input:focus, textarea:focus {
+    outline: 1px solid #c586a5;
+}
+
+
+.active{
+    background-color: #ffebf5;
+    border-color:#c586a5;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #ec81d5; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
